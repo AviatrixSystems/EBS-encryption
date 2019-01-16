@@ -39,26 +39,26 @@ Requirements
 
 Execute the script to encrypt root volume
 -----------------------------------------
-./enc_volume.py [-h] -i INSTANCE_ID [-key CUSTOMER_MASTER_KEY]
+python enc_volume.py [-h] -i INSTANCE_ID [-key CUSTOMER_MASTER_KEY]
                      [-region REGION] [-p PROFILE] [-key_id AWS_ACCESS_KEY_ID]
                      [-secret_key AWS_SECRET_ACCESS_KEY]
 
 Example 1:
 To encrypt root volume for instance i-04b8deaeb555fbee8 with default AWS CLI created profile userx and AWS default key management system:
 ```sh
-sudo ./enc_volume.py -i i-04b8deaeb555fbee8 -p userx
+python enc_volume.py -i i-04b8deaeb555fbee8 -p userx
 ```
 
 Example 2:
 To encrypt root volume for instance i-04b8deaeb555fbee8 with default AWS CLI created profile userx and customer master key:
 
 ```sh
-sudo ./enc_volume.py -i i-04b8deaeb555fbee8 -p userx -key xxx
+python enc_volume.py -i i-04b8deaeb555fbee8 -p userx -key xxx
 ```
 
 Example 3:
 To encrypt root volume for instance i-04b8deaeb555fbee8 in region us-east-1 with AWS Access Key ID yyy and Secret Access Key zzz and customer master key xxx:
 
 ```sh
-sudo ./enc_volume.py -i i-04b8deaeb555fbee8 --key xxx --region us-east-1 --aws_access_key_id yyy --aws_secret_access_key zzz
+python enc_volume.py -i i-04b8deaeb555fbee8 --key xxx --region us-east-1 --aws_access_key_id yyy --aws_secret_access_key zzz
 ```

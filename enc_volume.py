@@ -1,6 +1,6 @@
+"""
 #!/usr/bin/env python
  
-"""
 Overview:
 Take unencrypted root volume and encrypt it for EC2.
 Params:
