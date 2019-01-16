@@ -5,15 +5,16 @@ This repo shows how to encrypt an AWS EBS root volume. You can use the script to
 
 Requirements
 ------------
--       Install AWS Python SDK [Boto3](https://github.com/boto/boto3#quick-start) 
--       Install AWS CLI [AWSCLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
--       AWS CLI Configuration [Configure your client](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
+-	Install AWS Python SDK [Boto3](https://github.com/boto/boto3#quick-start) 
+-	Install AWS CLI [AWSCLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
+-	AWS CLI Configuration [Configure your client](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
 
--       IAM Permissions
+-	IAM Permissions
+
         These IAM policy actions are required in order to run this script. This is an example policy you can attach to a user to give them the proper IAM authorization.
 	    {
                 "Version": "2010-10-10",
-		"Statement": [
+	        "Statement": [
 		    {
 		        "Effect": "Allow",
 	                "Action": [
