@@ -79,6 +79,7 @@ def main(argv):
     if volumes:
         original_root_volume = volumes[0]
         volume_encrypted = original_root_volume.encrypted
+        original_volume_type = original_root_volume.volume_type
         if volume_encrypted:
             sys.exit(
                 '**Volume ({}) is already encrypted'
@@ -177,6 +178,7 @@ def main(argv):
     print('---Create encrypted volume from snapshot')
     volume_encrypted = ec2.create_volume(
         SnapshotId=snapshot_encrypted.id,
+        VolumeType=original_volume_type,
         AvailabilityZone=instance.placement['AvailabilityZone']
     )
 
