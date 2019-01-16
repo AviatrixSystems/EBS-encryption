@@ -21,7 +21,7 @@ import argparse
  
 def main(argv):
     parser = argparse.ArgumentParser(description='Encrypts EC2 root volume.')
-    parser.add_argument('-i', '--instance_id)',
+    parser.add_argument('-i', '--instance_id',
         help='Instance to encrypt volume on.', required=True)
     parser.add_argument('-key', '--customer_master_key',
         help='Customer master key', required=False)
