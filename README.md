@@ -15,6 +15,7 @@ Requirements
         	ex: sudo pip install --upgrade --user awscli
 	
         AWS CLI Configuration [Configure your client](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
+	
         	ex: aws configure --profile userx
 
 -	IAM Permissions
