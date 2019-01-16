@@ -10,7 +10,7 @@ Requirements
 		ex: sudo pip install boto3
 	
 	
--	or Install AWS CLI [AWSCLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
+-	Install AWS CLI [AWSCLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
 
         	ex: sudo pip install --upgrade --user awscli
 	
