@@ -5,9 +5,17 @@ This repo shows how to encrypt an AWS EBS root volume. You can use the script to
 
 Requirements
 ------------
--	Install AWS Python SDK [Boto3](https://github.com/boto/boto3#quick-start) 
--	Install AWS CLI [AWSCLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
--	AWS CLI Configuration [Configure your client](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
+-	Install AWS Python SDK [Boto3](https://github.com/boto/boto3#quick-start)
+
+		ex: sudo pip install boto3
+	
+	
+-	or Install AWS CLI [AWSCLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
+
+        	ex: sudo pip install --upgrade --user awscli
+	
+        AWS CLI Configuration [Configure your client](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
+        	ex: aws configure --profile userx
 
 -	IAM Permissions
 
@@ -42,6 +50,14 @@ Execute the script to encrypt root volume
 python enc_volume.py [-h] -i INSTANCE_ID [-key CUSTOMER_MASTER_KEY]
                      [-region REGION] [-p PROFILE] [-key_id AWS_ACCESS_KEY_ID]
                      [-secret_key AWS_SECRET_ACCESS_KEY]
+```sh		     
+-i instance id
+-key AWS Key Management Service Customer managed key ID
+-region Region
+-p AWS CLI configured profile(see Requirment example)
+-key_id AWS Access Key ID
+-secret key AWS Secret Access Key
+```
 
 Example 1:
 To encrypt root volume for instance i-04b8deaeb555fbee8 with default AWS CLI created profile userx and AWS default key management system:
