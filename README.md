@@ -39,7 +39,7 @@ Requirements
 
 Execute the script to encrypt root volume
 -----------------------------------------
-syntax: enc_volume.py [-h] -i INSTANCE_ID [-key CUSTOMER_MASTER_KEY]
+./enc_volume.py [-h] -i INSTANCE_ID [-key CUSTOMER_MASTER_KEY]
                      [-region REGION] [-p PROFILE] [-key_id AWS_ACCESS_KEY_ID]
                      [-secret_key AWS_SECRET_ACCESS_KEY]
 
